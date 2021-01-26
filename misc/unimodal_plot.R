@@ -14,12 +14,11 @@ names(df) = list("x", "y")
 
 df
 
-
-pdf("unimodal.pdf")
-
-df %>% ggplot(aes(x=x, y=y)) +
+unimodal_plot <- df %>% ggplot(aes(x=x, y=y)) +
 	geom_point(size=3, color="red") +
 	geom_line() +
 	xlab("sequence") +
 	ylab("values") +
-	labs(title = "Unimodal sequence", subtitle = waiver())
+	labs(title = "Example sequence", subtitle = waiver())
+
+ggsave("unimodal.png", plot = unimodal_plot)
