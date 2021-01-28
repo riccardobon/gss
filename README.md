@@ -3,8 +3,8 @@ Golden-section search
 First version developed on 2019-05-26
 
 ## Introduction
-Implementation of the golden-section search algorithm for unimodal
-sequences.  
+Implementation of the golden-section search algorithm for **unimodal
+sequences**.  
 Finds extrema (minimum or maximum).  
 Tested with Python 3.7.
 
